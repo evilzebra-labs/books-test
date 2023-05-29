@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Awesome Books</h1>
+      <form action="" class="add-books-form">
+        <input type="text" id="title" name="title" required placeholder="Book title" />
+        <input type="text" id="author" name="author" required placeholder="Book author" />
+        <input type="submit" id="addBook" value="Add Book" />
+      </form>
+
+      <div class="book-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="no-books hidden">
+              <td colspan="3">There are no Books stored</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
